@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-sm-2 mat-elevation-z5">
+        <app-sidebar></app-sidebar>
+
+    </div>
+    <div class="col-sm-10">
+        <ul>
+            <li *ngFor="let item of items | async">
+                {{ item.name }}
+            </li>
+        </ul>
+    </div>
+</div>
